@@ -1,0 +1,29 @@
+name: marp-to-pages
+concurrency: marp-to-pages
+on:
+  push:
+    branches: [ main ]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Copy images
+        run: mkdir build && cp -R img build/img
+
+      - name: Marp Build (index)
+        uses: docker://marpteam/marp-cli:v1.7.0
+        with:
+          args: presentation.md --html -o build/index.html
+        env:
+          MARP_USER: root:root
+
+      - name: Deploy production
+        if: ${{ github.event_name == 'push' }}
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          branch: gh-pages
+          folder: ./build/
