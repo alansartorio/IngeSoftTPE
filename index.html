@@ -155,6 +155,16 @@
 ;">
 <h2>Imperative Version</h2>
 <p><img src="./img/5.png" alt="" style="width:900px;" /></p>
+<div class="columns">
+<div>
+</div>
+<div>
+<pre><code class="language-js"><svg data-marp-fitting="svg" data-marp-fitting-code><foreignObject><span data-marp-fitting-svg-content><span data-marp-fitting-svg-content-wrap><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">addProduct</span>(<span class="hljs-params">product</span>) </span>{
+  Bill.addProduct(product);
+}
+</span></span></foreignObject></svg></code></pre>
+</div>
+</div>
 </section>
 </foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="10" data-class="invert" data-style=".columns {
     display: grid;
@@ -171,6 +181,27 @@
 ;">
 <h2>More Reactive Version</h2>
 <p><img src="./img/6.png" alt="" style="width:1100px;" /></p>
+<div class="columns">
+<div>
+<pre><code class="language-js"><svg data-marp-fitting="svg" data-marp-fitting-code><foreignObject><span data-marp-fitting-svg-content><span data-marp-fitting-svg-content-wrap><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Bill</span> </span>{
+  <span class="hljs-keyword">let</span> cart;
+
+  <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">getBill</span>(<span class="hljs-params">cart</span>) </span>{
+    cart.onAddProduct(<span class="hljs-function">(<span class="hljs-params">product</span>) =&gt;</span> {
+      <span class="hljs-comment">// Update bill</span>
+    });
+  }
+}
+</span></span></foreignObject></svg></code></pre>
+</div>
+<div>
+<pre><code class="language-js"><svg data-marp-fitting="svg" data-marp-fitting-code><foreignObject><span data-marp-fitting-svg-content><span data-marp-fitting-svg-content-wrap><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">addProduct</span>(<span class="hljs-params">product</span>) </span>{
+  ...
+  <span class="hljs-comment">// event!!</span>
+}
+</span></span></foreignObject></svg></code></pre>
+</div>
+</div>
 </section>
 </foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="11" data-class="invert" data-style=".columns {
     display: grid;
