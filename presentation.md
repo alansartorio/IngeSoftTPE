@@ -62,11 +62,50 @@ We can transfer the responsibility to each component, but how?
 
 ![width:900px](./img/5.png)
 
+<div class="columns">
+<div>
+</div>
+<div>
+
+```js
+function addProduct(product) {
+  Bill.addProduct(product);
+}
+```
+</div>
+</div>
+
 ---
 
 ## More Reactive Version
 
 ![width:1100px](./img/6.png)
+
+<div class="columns">
+<div>
+
+```js
+class Bill {
+  let cart;
+
+  function getBill(cart) {
+    cart.onAddProduct((product) => {
+      // Update bill
+    });
+  }
+}
+```
+</div>
+<div>
+
+```js
+function addProduct(product) {
+  ...
+  // event!!
+}
+```
+</div>
+</div>
 
 ---
 
