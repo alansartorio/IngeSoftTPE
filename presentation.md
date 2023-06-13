@@ -1,6 +1,5 @@
 ---
 marp: true
-theme: uncover
 class: invert
 style: |
   .columns {
