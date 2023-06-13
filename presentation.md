@@ -73,7 +73,13 @@ We can transfer the responsibility to each component, but how?
 
 ## Fully Reactive Version
 
-![width:1000px](./img/7.png)
+```javascript
+function bill(products: Observable<Products>) Observable<Float> {
+    return products.reduce((acc, product) => {
+        acc += product.price
+    }, 0)
+}
+```
 
 ---
 
