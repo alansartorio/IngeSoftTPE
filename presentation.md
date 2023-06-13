@@ -81,6 +81,10 @@ Notice that in this final version, we don't need the Bill class. We have a singl
 
 ---
 
+> Self-updates listening to events.
+
+---
+
 ## Key Concepts
 
 - **Data Streams**: Sequences of values over time.
