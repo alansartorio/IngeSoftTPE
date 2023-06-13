@@ -3,12 +3,12 @@ marp: true
 theme: uncover
 class: invert
 style: |
-    .columns {
-        display: grid;
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-        align-items: center;
-        gap: 12px;
-    }
+  .columns {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      align-items: start;
+      gap: 12px;
+  }
 ---
 
 # Reactive Programming
@@ -20,6 +20,64 @@ style: |
 - Reactive programming is a programming paradigm focused on **data streams** and the propagation of changes.
 - It provides a declarative and composable way to handle **asynchronous** and **event-based** systems.
 - The reactive approach promotes **responsive**, **resilient**, and **scalable** applications.
+
+---
+
+## Main Problem
+
+What's the first thing that comes to mind when you're told that Class 1 and this are the dependencies?
+
+![width:300px](./img/1.png)
+
+---
+
+And this?
+
+![width:700px](./img/2.png)
+
+---
+
+This is one of the **mayor issues** we encounter when our components are not self-contained in their functionality and constantly rely on other components.
+
+---
+
+## How can we fix this?
+
+We can transfer the responsibility to each component, but how?
+
+---
+
+#### Let's see an example: Shopping Cart!
+
+![width:700px](./img/3.png)
+
+---
+
+#### Let's simplify it.
+
+![width:700px](./img/4.png)
+
+---
+
+## Imperative Version
+
+![width:900px](./img/5.png)
+
+---
+
+## More Reactive Version
+
+![width:1100px](./img/6.png)
+
+---
+
+## Fully Reactive Version
+
+![width:1000px](./img/7.png)
+
+---
+
+Notice that in this final version, we don't need the Bill class. We have a single function that performs a specific task using observables asynchronously.
 
 ---
 
@@ -37,6 +95,9 @@ style: |
 2. **Resilience**: Handle errors gracefully and recover.
 3. **Scalability**: Scale efficiently with high data volumes.
 4. **Message-driven**: Communicate through asynchronous messages.
+
+---
+
 5. **Composition**: Compose operations to create complex behaviors.
 6. **Backpressure**: Control the rate of data flow to avoid overwhelm.
 7. **Hot vs. Cold**: Distinguish between active and passive data streams.
@@ -44,7 +105,7 @@ style: |
 
 ---
 
-## Reactive vs. Imperative Code
+## Imperative Code vs. Reactive
 
 <div class="columns">
 <div>
@@ -66,8 +127,8 @@ for (const number of numbers) {
 ```javascript
 // Reactive Code
 const result$ = numbers$
-  .filter(x => x % 2 === 0)
-  .map(x => x * 2)
+  .filter((x) => x % 2 === 0)
+  .map((x) => x * 2)
   .reduce((acc, x) => acc + x, 0);
 ```
 
