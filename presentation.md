@@ -139,49 +139,17 @@ Notice that in this final version, we don't need the Bill class. We have a singl
 
 ## Reactive Principles
 
-1. **Responsiveness**: React quickly to data changes.
-2. **Resilience**: Handle errors gracefully and recover.
-3. **Scalability**: Scale efficiently with high data volumes.
-4. **Message-driven**: Communicate through asynchronous messages.
+1. **Stay Responsive**: Always respond in a timely manner
+2. **Accept Uncertainty**: Build reliability despite unreliable foundations
+3. **Embrace Failure**: Expect things to go wrong and design for resilience
+4. **Assert Autonomy**: Design components that act independently and interact collaboratively
 
 ---
 
-5. **Composition**: Compose operations to create complex behaviors.
-6. **Backpressure**: Control the rate of data flow to avoid overwhelm.
-7. **Hot vs. Cold**: Distinguish between active and passive data streams.
-8. **Time**: Leverage time as a first-class citizen.
-
----
-
-## Imperative Code vs. Reactive
-
-<div class="columns">
-<div>
-
-```javascript
-// Imperative Code
-let result = 0;
-for (const number of numbers) {
-  if (number % 2 === 0) {
-    const doubled = number * 2;
-    result += doubled;
-  }
-}
-```
-
-</div>
-<div>
-
-```javascript
-// Reactive Code
-const result$ = numbers$
-  .filter((x) => x % 2 === 0)
-  .map((x) => x * 2)
-  .reduce((acc, x) => acc + x, 0);
-```
-
-</div>
-</div>
+5. **Tailor Consistency**: Individualize consistency per component to balance availability and performance
+6. **Decouple Time**: Process asynchronously to avoid coordination and waiting
+7. **Decouple Space**: Create flexibility by embracing the network
+8. **Handle Dynamics**: Continuously adapt to varying demand and resources
 
 ---
 
