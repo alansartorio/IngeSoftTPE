@@ -205,6 +205,12 @@ Notice that in this final version, we don't need the Bill class. We have a singl
 
 ---
 
+## ReactiveX Core Operators
+
+`Create` `Defer` `Empty` `From` `Interval` `Just` `Range` `Repeat` `Start` `Timer` `Buffer` `FlatMap` `GroupBy` `Map` `Scan` `Window` `Debounce` `Distinct` `ElementAt` `Filter` `First` `IgnoreElements` `Last` `Sample` `Skip` `SkipLast` `Take` `TakeLast` `And` `Then` `When` `CombineLatest` `Join` `Merge` `StartWith` `Switch` `Zip` `Catch` `Retry` `Delay` `Do` `Materialize` `ObserveOn` `Serialize` `Subscribe` `SubscribeOn` `TimeInterval` `Timeout` `Timestamp` `Using` `All` `Amb` `Contains` `DefaultIfEmpty` `SequenceEqual` `SkipUntil` `SkipWhile` `TakeUntil` `TakeWhile` `Average` `Concat` `Count` `Max` `Min` `Reduce` `Sum` `Connect` `Publish` `RefCount` `Replay` `To`
+
+---
+
 ## Libraries for Reactive Programming
 
 - **RxJava**: Reactive extensions for Java.
