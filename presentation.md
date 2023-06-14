@@ -60,7 +60,7 @@ We can transfer the responsibility to each component, but how?
 
 ## Imperative Version
 
-![width:900px](./img/5.png)
+![width:900px](./img/4.png)
 
 <div class="columns">
 <div>
@@ -79,7 +79,7 @@ function addProduct(product) {
 
 ## More Reactive Version
 
-![width:1100px](./img/6.png)
+![width:1100px](./img/4.png)
 
 <div class="columns">
 <div>
