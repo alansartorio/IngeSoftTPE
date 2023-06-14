@@ -36,7 +36,7 @@ And this one?
 
 ---
 
-This is one of the **mayor issues** we encounter when our components are not self-contained in their functionality and constantly rely on other components.
+This is one of the **major issues** we encounter when our components are not self-contained in their functionality and constantly rely on other components.
 
 ---
 
