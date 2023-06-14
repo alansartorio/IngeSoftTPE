@@ -262,5 +262,3 @@ const result$ = numbers$
 ## Thank You!
 
 ---
-
-Note: This presentation provides a brief overview of
