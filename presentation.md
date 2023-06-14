@@ -72,6 +72,7 @@ function addProduct(product) {
   Bill.addProduct(product);
 }
 ```
+
 </div>
 </div>
 
@@ -95,6 +96,7 @@ class Bill {
   }
 }
 ```
+
 </div>
 <div>
 
@@ -104,6 +106,7 @@ function addProduct(product) {
   // event!!
 }
 ```
+
 </div>
 </div>
 
