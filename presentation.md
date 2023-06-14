@@ -24,13 +24,13 @@ style: |
 
 ## Main Problem
 
-What's the first thing that comes to mind when you're told that Class 1 and this are the dependencies?
+What's the first thing that comes to mind when you have this dependency tree?
 
 ![width:300px](./img/1.png)
 
 ---
 
-And this?
+And this one?
 
 ![width:700px](./img/2.png)
 
