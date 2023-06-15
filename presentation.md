@@ -221,11 +221,11 @@ Notice that in this final version, we don't need the Bill class. We have a singl
 
 ## Libraries for Reactive Programming
 
-- **RxJava**: Reactive extensions for Java.
-- **RxJS**: Reactive extensions for JavaScript.
-- **ReactiveSwift**: Reactive extensions for Swift.
-- **ReactiveUI**: Reactive extensions for .NET.
-- **Akka**: Actor-based framework supporting reactive programming.
+- **RxJava**: Java.
+- **RxJS**: JavaScript.
+- **Rx.NET**: C#.
+- **RxPY**: Python.
+- **RxSwift**: Swift.
 
 ---
 
