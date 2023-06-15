@@ -10,7 +10,7 @@ style: |
   }
 ---
 
-# Reactive Programming
+# <!--fit-->Reactive Programming
 
 ---
 
@@ -103,7 +103,7 @@ class Bill {
 ```js
 function addProduct(product) {
   ...
-  // event!!
+  // fire event!!
 }
 ```
 
@@ -129,6 +129,10 @@ Notice that in this final version, we don't need the Bill class. We have a singl
 ---
 
 > Self-updates listening to events.
+
+---
+
+# <!--fit-->Demo
 
 ---
 
@@ -233,8 +237,8 @@ Notice that in this final version, we don't need the Bill class. We have a singl
 
 ---
 
-## Questions?
+## <!--fit-->Questions?
 
 ---
 
-## Thank You!
+## <!--fit-->Thank You!
