@@ -238,5 +238,3 @@ Notice that in this final version, we don't need the Bill class. We have a singl
 ---
 
 ## Thank You!
-
----
