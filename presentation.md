@@ -167,31 +167,32 @@ Notice that in this final version, we don't need the Bill class. We have a singl
 
 ---
 
-## Common Operators (contd.)
+## Common Operators
 
 **Filtering Operators:**
 
-- `filter()`: Filter values based on conditions.
+- `filter()`: Filter values with predicate.
 - `distinct()`: Emit unique values.
-- `takeUntil()`: Take values until a condition is met.
-- `debounceTime()`: Delay emission of values.
+- `take()`: Emit first _n_ elements.
+- `debounceTime()`: Emit item only if a period passed without emitting another item.
 
 ---
 
-## Common Operators (contd.)
+## Common Operators
 
 **Combining Operators:**
 
-- `combineLatest()`: Combine values from multiple streams.
-- `merge()`: Merge multiple streams into one.
-- `concat()`: Concatenate values from multiple streams.
-- `zip()`: Combine corresponding values from multiple streams.
+- `combineLatest()`: Combine values from multiple observables using the latest of each.
+- `merge()`: Combine multiple observables into one by merging their emissions.
+- `concat()`: Concatenate values from multiple observables without interleaving.
+- `zip()`: Combine corresponding values from multiple observables.
 
 ---
 
-## Common Operators (contd.)
+## Common Operators
 
 **Math Operators:**
+(for number observables only)
 
 - `sum()`: Calculate the sum of values.
 - `min()`: Find the minimum value.
@@ -204,7 +205,7 @@ Notice that in this final version, we don't need the Bill class. We have a singl
 
 - ReactiveX (Rx) is a popular library for reactive programming.
 - Provides implementations in various languages (e.g., RxJava, RxJS).
-- Offers a rich set of operators and abstractions for working with data streams.
+- Offers a rich set of operators and abstractions for working with observables.
 
 ---
 
