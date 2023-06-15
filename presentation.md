@@ -1,12 +1,24 @@
 ---
 marp: true
+<!--theme: uncover-->
 class: invert
 style: |
   .columns {
-      display: grid;
-      grid-template-columns: repeat(2, minmax(0, 1fr));
-      align-items: start;
-      gap: 12px;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    align-items: start;
+    gap: 12px;
+  }
+  section {
+    justify-content: center;
+    align-items: stretch;
+  }
+  section p:has(img) {
+    align-self: center;
+  }
+  section h1 {
+    font-size: 5em;
+    text-align: center;
   }
 ---
 
@@ -128,11 +140,7 @@ Notice that in this final version, we don't need the Bill class. We have a singl
 
 ---
 
-> Self-updates listening to events.
-
----
-
-# <!--fit-->Demo
+# Demo
 
 ---
 
@@ -237,8 +245,8 @@ Notice that in this final version, we don't need the Bill class. We have a singl
 
 ---
 
-## <!--fit-->Questions?
+# Questions?
 
 ---
 
-## <!--fit-->Thank You!
+# Thank You!
